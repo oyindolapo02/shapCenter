@@ -17,10 +17,10 @@ const Products = () => {
   return (
     <div className='flex flex-col justify-between items-center border border-yellow-400 w-full min-h-screen rounded-md'>
       <Navbar/>
-      <div className='flex flex-col md:flex-row md:justify-center border border-purple-500 w-full lg:w-11/12 xl:w-[90%] min-h-[30vh] rounded-md'>
+      <div className='flex flex-col justify-center md:flex-row md:justify-center border border-purple-500 w-full lg:w-11/12 xl:w-[90%] bg-slate-100 rounded-md'>
 
-        <div className='border border-red-500 w-[30%] relative rounded-md'>
-          <div className='pl-2 md:pl-10 border border-pink-400 h-[50%] w-full absolute top-12 rounded-md'>
+        <div className='border w-full md:w-[35%] border-green-500 min-h-[45vh] md:h-[45vh] relative rounded-md'>
+          <div className='pl-2 md:pl-10 border border-pink-400 w-full min-h-[60%] absolute top-12 rounded-md'>
             <div className='border'>
               <h1 className='text-2xl font-medium'>Product Categories</h1>
               <div className='flex mt-3 font-normal text-lg'>
@@ -52,15 +52,17 @@ const Products = () => {
           </div>
         </div>
 
-        <div className='border border-x-black w-[70%]'>
+        <div className='border-2 w-full md:w-[65%] border-pink-400 md:flex-3'>
           <div className='border border-yellow-700 mt-11 w-full h-[17%] rounded-md'>
             <img className='w-full h-[100%] object-cover rounded-md' src="https://th.bing.com/th/id/R.986e807e717bfbf482385513ba15320f?rik=mxYr%2bUlGcfl1wg&pid=ImgRaw&r=0" alt="" />
           </div>
-          <Lists
-            catId = {catId}
-            price = {price}
-            sort = {sort}
-          />
+          <div className='border border-emerald-500'>
+            <Lists
+              catId = {catId}
+              price = {price}
+              sort = {sort}
+            />
+          </div>
         </div>
       </div>
       <Footer/>
@@ -69,3 +71,9 @@ const Products = () => {
 }
 
 export default Products
+
+// w-full md:w-[35%]
+// flex-col justify-center
+
+
+// w-full md:w-[65%]

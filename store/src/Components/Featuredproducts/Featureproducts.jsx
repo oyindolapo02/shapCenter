@@ -75,13 +75,13 @@ const Featureproducts = ({typed}) => {
     // w-full lg:w-11/12 xl:w-[90%]
 
   return (
-    <div className='flex flex-col items-center mt-3 min-h-[50vh] md:h-[45vh] lg:h-[60vh] w-full lg:w-11/12 xl:w-[90%] bg-slate-100 rounded-md'>
+    <div className='flex flex-col items-center mt-3 pb-4 min-h-[50vh] md:h-[45vh] lg:h-[60vh] w-full lg:w-11/12 xl:w-[90%] bg-slate-100 rounded-md'>
         <div className='flex flex-col md:flex md:flex-row md:justify-between border py-12 h-[35%] md:h-[25%] border w-full lg:w-[90%]'>
             <h3 className='m-auto border text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-3'>{typed} Products</h3>
             {/* <p className='border w-[60%] m-auto font-medium text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit illum vitae eaque, quas aspernatur labore, voluptates suscipit molestiae officiis sed pariatur. Possimus deleniti totam nobis vel eligendi exercitationem pariatur?</p> */}
-            <Typed className='border w-[60%] m-auto text-center md:text-left font-semibold text-gray-400' strings={['Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit illum vitae eaque, quas aspernatur labore, voluptates suscipit molestiae officiis sed pariatur. Possimus deleniti totam nobis vel eligendi exercitationem pariatur?']} typeSpeed={20} backSpeed={10} loop/>
+            <Typed className='border w-[60%] m-auto text-center md:text-left font-semibold text-gray-400' strings={['THE GAME IS NOT TOLD, IT IS SOLD. WE DONT PLAY WE WORK, DONT ASK WHERE HAVE WE BEEN, ASK US WHAT HAVE WE BEEN DOING. THATS THE WORD, THAK YOU.']} typeSpeed={20} backSpeed={10} loop/>
         </div>
-        <div className='flex justify-center flex-wrap md:flex-nowrap border border-emerald-400 mt-3 h-[50%] md:h-[70%] lg:h-[75%] w-full md:w-[85%] lg:w-[80%]'>
+        <div className='flex justify-center flex-wrap md:flex-nowrap border pb-2 border-emerald-400 mt-3 h-[50%] md:h-[70%] lg:h-[75%] w-full md:w-[85%] lg:w-[80%]'>
             {data.map(info => {
                 return (
                     <Cards
