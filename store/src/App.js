@@ -4,6 +4,7 @@ import Home from './Pages/Home/Home';
 import Product from './Pages/product/Product';
 import Products from './Pages/products/Products';
 import Alldata from './Pages/Alldata/Alldata';
+import Cart from './Pages/CartF/Cart';
 import Notexisitingpage from './Pages/NonExistingpages F/Notexisitingpage';
 
 
@@ -50,6 +51,7 @@ function App() {
           <Route path='/product/:id' element={<Product/>}/>
           <Route path='products/:id' element={<Products/>}/>
           <Route path='/alldata' element={<Alldata/>}/>
+          <Route path='/cart' element={<Cart/>}/>
           <Route path='*' element={<Notexisitingpage/>}/>
         </Routes>
       </Router>

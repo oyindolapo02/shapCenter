@@ -86,7 +86,7 @@ const Lists = () => {
     ]
 
   return (
-    <div className='flex justify-between flex-wrap border border-blue-500 mt-2 w-full min-h-[100%] bg-yellow-300 rounded-md'>
+    <div className='flex justify-between flex-wrap border border-blue-500 mt-2 w-full min-h-[100%] rounded-md'>
         {data.map(info=> {
             return (
                 <Cards

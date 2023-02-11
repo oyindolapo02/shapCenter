@@ -65,36 +65,36 @@ const Product = () => {
       <Navbar
         cart = {cart}
       />
-      <div className='border border-red-700 px-2 lg:px-0 md:h-[75vh] mt-12 flex flex-col bg-slate-100 sm:flex sm:flex-row sm:justify-center w-full lg:w-11/12 xl:w-[90%] rounded-md'>
-        <div className='flex border border-yellow-600 w-full sm:w-[50%]'>
-          <div className='border border-purple-700 w-[7rem] h-fit mr-2'>
+      <div className='border px-2 lg:px-0 md:h-[75vh] mt-12 flex flex-col bg-slate-100 sm:flex sm:flex-row sm:justify-center w-full lg:w-11/12 xl:w-[90%] rounded-md'>
+        <div className='flex border w-full sm:w-[50%]'>
+          <div className='border w-[7rem] h-fit mr-2'>
             <img className='w-[100%] h-[100%] rounded-md' src={Image[0]} alt=""  onClick={e=> setimageSelector(0)}/>
             <img className='w-[100%] h-[100%] mt-3 rounded-md' src={Image[1]} alt="" onClick={e=> setimageSelector(1)}/>
           </div>
-          <div className='flex border border-blue-500 w-full h-[100%] rounded-md'>
+          <div className='flex border w-full h-[100%] rounded-md'>
             <img className='w-full h-full object-cover rounded-md' src={Image[imageSelector]} alt=""/>
           </div>
         </div>
 
-        <div className='flex flex-col sm:ml-4 border border-green-600 mt-2 sm:mt-0 w-full sm:w-[50%]'>
-          <div className='border border-orange-300'>
+        <div className='flex flex-col sm:ml-4 border mt-2 sm:mt-0 w-full sm:w-[50%]'>
+          <div className='border'>
             <h2 className='text-3xl font-bold mb-4 pr-3'>Long Sleeve Graphics T-Shirt</h2>
             <h1 className='text-2xl text-blue-600'>$19.9</h1>
             <p className='my-4 text-slate-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus a dignissimos nostrum alias quidem, reiciendis at earum aperiam doloremque neque omnis delectus fugiat aliquam sapiente maiores saepe deleniti. Quos, sapiente.</p>
-            <div className='flex items-center border border-green-400 h-12 mb-4'>
+            <div className='flex items-center border h-12 mb-4'>
               <button onClick={decrement} className='text-slate-500 border py-2 px-4 bg-white'>-</button>
               <p className='text-lg py-2 px-4 font-medium'>{productButton}</p>
               <button onClick={increment} className='text-slate-500 border py-2 px-4 bg-white'>+</button>
             </div>
             <button className='flex items-center border mb-4 py-3 px-12 bg-blue-600 text-white font-medium rounded-md' onClick={addCart}><FaCartArrowDown className='bg-blue-600 text-white font-medium mr-3'/> ADD TO CART</button>
 
-            <div className='flex items-center border border-gray-500 mb-11 h-11 text-blue-600 font-medium'>
+            <div className='flex items-center border mb-11 h-11 text-blue-600 font-medium'>
               <button className='flex items-center border h-[100%] py-3 px-3 bg-white rounded-md'><AiOutlineHeart className='mr-3'/> ADD TO WISH LIST</button>
               <button className='flex items-center border h-[100%] ml-4 py-3 px-3 bg-white rounded-md'><FaBalanceScale className='mr-3'/> ADD TO COMPARE</button>
             </div>
           </div>
 
-          <div className='border border-emerald-400 md:text-sm lg:text-lg'>
+          <div className='border md:text-sm lg:text-lg'>
             <div className='border pb-10 mb-2 text-slate-500'>
               <p className='my-1'>Vendor: polo</p>
               <p className='my-1'>Product Type: T-Shirt</p>
